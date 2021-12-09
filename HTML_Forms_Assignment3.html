@@ -1,0 +1,67 @@
+<!--Exercise 3: In this HTML page, Create a form with all the fields as shown below. 
+
+1. First name
+2. Middle name
+3. Last name
+4. gender
+5. Phone number
+6. Date of Birth
+7. Current Address
+8. Qualification
+9. Email id
+10. Register and clear buttons
+11. Add validations for name, Email id, Qualification. and phone number should take only 10 numbers
+
+After completion of this form click on preview link to see your output and submit the assignment to gitHub. -->
+
+<html>
+<body>
+<form>
+    <fieldset>
+    <legend>Excercise 3</legend>
+    <table>
+        <tr>
+            <td><label>First name:</label></td>
+            <td><input type ="text" name="fname" required/></td>
+        </tr>
+        <tr>
+            <td><label>Middle name:</label></td>
+            <td><input type ="text" name="fname" required/></td>
+        </tr>
+        <tr>
+            <td><label>Last name:</label></td>
+            <td><input type ="text" name="lname" required/></td>
+        </tr>
+        <tr>
+        <td><label>Gender:</label></td>
+        <td><input type="radio" value="female" name="gender"><label>Female</label>            <input type="radio" value="male" name="gender"><label >Male</label>
+           <input type="radio" value="male" name="gender"><label >Others</label>
+                </td>
+        </tr>
+       <tr>
+           <td><label for="phone">Phone number:</label></td>
+           <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></td>
+       </tr>
+       <tr>
+           <td><label>Date of birth</label></td>
+           <td><input type="date" /></td>
+       </tr>
+       <tr>
+           <td><label>Current Address:</label></td>
+            <td><textarea rows=4 cols=20></textarea></td>
+       </tr>
+       <tr>
+           <td><Label>Qualification</Label></td>
+           <td><input type="text" name="qualification" required/></td>
+       </tr>
+       <tr>
+                <td><label>Email id:</label></td>
+                <td><input type="email" name="email" required></td>
+        </tr>
+        </table>
+        </fieldset>
+        <input type="reset" value="Clear">
+        <input type="submit" value="Register">
+</form>
+</body>
+</html>
